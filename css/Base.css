@@ -1,0 +1,163 @@
+* {
+    /*background: rgba(0,0,0,.1);*/
+    box-sizing: border-box;
+    transition-delay: 150ms;
+    transition: background 150ms;
+}
+
+body {
+    background: #267da2;
+    color: #fff;
+}
+
+.container {
+    width: 1024px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,
+.task_list,
+button,
+textarea,
+.task_detail
+{
+    padding: 3px;
+    border-radius: 3px;
+}
+
+textarea{
+    border: 0;
+    min-height: 200px;
+}
+
+input[type="text"], input[type="date"],textarea {
+    border: 0;
+    display: block;
+    width: 100%;
+    outline: 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,.4);
+    cursor: text;
+    background: #eee;
+}
+
+button {
+    display: inline-block;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    background: #c1dbf1;
+}
+
+.add_task input {
+    float: left;
+    width: 90%;
+    margin-right: 1%;
+}
+
+
+.add_task button {
+    position: relative;
+    width: 9%;
+    cursor: pointer;
+}
+
+.add_task button, .main {
+    box-shadow: 1px 1px 5px rgba(125, 159, 187, 0.4);
+}
+
+button:hover {
+    background: #d4ebf1;
+}
+
+.main {
+    margin: 10px 0;
+    cursor: pointer; /*鼠标变手型*/
+}
+
+.task_list {
+    height: auto;
+    margin-bottom: 3px;
+    padding: 3px 5px;
+    background: white;
+    color: #3c93bb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.task_list:hover {
+    background: #eee;
+    transition-delay: 180ms;
+}
+
+.task_detail,.task_detail_mask{
+    position: absolute;
+    display: none;
+}
+
+.task_detail{
+    top: 0;
+    right: 5px;
+    width: 50%;
+    background: #fff;
+    color: #333;
+    padding: 6px;
+    z-index: 1;
+}
+
+.task_detail .content{
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.task_detail>*{
+    padding-bottom: 5px;
+}
+
+.task_detail_mask{    /*显示详情时背景仍为原界面*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 1024px;
+    background: rgba(62, 62, 62, 0.2);
+    position: fixed; /* fixed mask覆盖浏览器 */
+}
+
+.rightmove{
+    float: right;
+    color: #58c0d5;
+    font-size: 80%;}
+
+.task_content{margin-left: 10px;font-weight:500;}
+
+.content_title{font-size: 20px}
+
+.desc,.time,.task_detail button{
+    margin: 10px;
+}
+
+.task_list.completed{
+    color: #aaa;
+    /*background: #e2dfdf;*/
+    opacity: 0.7;
+}
+
+.task_list.completed:after{
+    content: "";
+    width: 98%;
+    height: 2px;
+    background: #2d3031;
+    position: relative;
+    display: block;
+    top: -11px;
+    float: right;
+
+}
