@@ -1,0 +1,47 @@
+{
+  "name": "lobibox",
+  "description": "jQuery Responsive notification plugin",
+  "main": [
+    "dist/css/lobibox.css",
+    "dist/js/lobibox.js",
+    "dist/sounds/sound1.ogg",
+    "dist/sounds/sound2.ogg",
+    "dist/sounds/sound3.ogg",
+    "dist/sounds/sound4.ogg",
+    "dist/sounds/sound5.ogg",
+    "dist/sounds/sound6.ogg"
+  ],
+  "authors": [
+    {
+      "name": "Zura Sekhniashvili",
+      "email": "zurasekhniashvili@gmail.com",
+      "homepage": "https://github.com/arboshiki"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jQuery",
+    "plugin",
+    "notification",
+    "responsive",
+    "messagebox",
+    "css3",
+    "animation",
+    "window",
+    "ajax",
+    "loading"
+  ],
+  "homepage": "https://github.com/arboshiki/lobibox",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  }
+}
