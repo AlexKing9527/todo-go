@@ -1,3 +1,3 @@
-# todo-go
+# todo-go(番茄清单)
 
-A simple todo list app built in HTML, CSS and JavaScript.
+Simple JS pracise ->- A simple todo list app built in HTML, CSS and JavaScript(Jquery).
